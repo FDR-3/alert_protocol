@@ -15,8 +15,11 @@ security_txt!
     policy: "If you find a bug, email me and say something please D:"
 }
 
+#[cfg(feature = "dev")] 
 const INITIAL_CEO_ADDRESS: Pubkey = pubkey!("Fdqu1muWocA5ms8VmTrUxRxxmSattrmpNraQ7RpPvzZg");
-//const INITIAL_CEO_ADDRESS: Pubkey = pubkey!("DSLn1ofuSWLbakQWhPUenSBHegwkBBTUwx8ZY4Wfoxm");
+
+#[cfg(feature = "local")] 
+const INITIAL_CEO_ADDRESS: Pubkey = pubkey!("DSLn1ofuSWLbakQWhPUenSBHegwkBBTUwx8ZY4Wfoxm");
 
 //PSA Alert needs atleast 424 extra bytes of space to pass with full load
 const SITE_PSA_ALERT_EXTRA_SIZE: usize = 430;
