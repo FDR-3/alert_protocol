@@ -7,7 +7,7 @@ declare_id!("8a9Uup7MfuERSx9iLr99uS2WQQJ9QidTvc7QaVH9nwH3");
 #[cfg(not(feature = "no-entrypoint"))] //Ensure it's not included when compiled as a library
 security_txt!
 {
-    name: "Alert Protocol",
+    name: "M4A Alert Protocol",
     project_url: "https://m4a.io",
     contacts: "email fdr3@m4a.io",
     preferred_languages: "en",
